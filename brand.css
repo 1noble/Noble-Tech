@@ -1,0 +1,33 @@
+/* Reset and base styles */
+
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+
+body { background-color: #ffffff; color: #333; line-height: 1.6; }
+
+/* Animated background */ .animated-bg { background: linear-gradient(-45deg, #2196f3, #e91e63, #9c27b0, #03a9f4); background-size: 600% 600%; animation: gradientShift 10s ease infinite; padding: 1rem; color: white; }
+
+@keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; }
+
+.logo { font-size: 1.8rem; font-style: italic; font-weight: bold; }
+
+.btn { display: inline-block; background-color: #2196f3; color: white; padding: 0.6rem 1.2rem; margin-top: 1rem; border: none; border-radius: 8px; cursor: pointer; transition: background 0.3s; text-decoration: none; }
+
+.btn:hover { background-color: #1976d2; }
+
+.section-light { background-color: #f9f9f9; padding: 2rem; }
+
+.dropdown { padding: 0.6rem; font-size: 1rem; margin: 1rem 0; border-radius: 6px; border: 1px solid #ccc; width: 100%; max-width: 300px; }
+
+.product-display { margin-top: 1.5rem; }
+
+.product-grid { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+
+.product-grid div { background-color: #fff; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); flex: 1 1 200px; text-align: center; }
+
+.hidden { display: none; }
+
+footer { text-align: center; padding: 1rem; background-color: #f1f1f1; font-size: 0.9rem; color: #666; }
+

@@ -1,0 +1,170 @@
+/* Basic setup */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animated background for the entire page */
+@keyframes backgroundAnimation {
+  0% {
+    background: #ff7eb9;
+  }
+  50% {
+    background: #7a9ff3;
+  }
+  100% {
+    background: #ff7eb9;
+  }
+}
+
+/* Apply the animated background to all sections */
+section {
+  animation: backgroundAnimation 10s ease-in-out infinite;
+  padding: 40px 20px;
+  text-align: center;
+  transition: background 1s ease-in-out;
+}
+
+/* Styling for header section - Set a constant background */
+.animated-bg {
+  background: linear-gradient(to right, #ff7eb9, #7a9ff3); /* Set a constant gradient */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  /* Removed animation to keep it constant */
+}
+
+/* Styling for the About Us section */
+.about-section {
+  animation: backgroundAnimation 15s ease-in-out infinite;
+}
+
+/* Styling for the Services section */
+.services-section {
+  animation: backgroundAnimation 15s ease-in-out infinite;
+}
+
+.services-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-section li {
+  margin: 8px 0;
+}
+
+/* Styling for other sections */
+#gadgets, #repair, #reviews, #contact {
+  padding: 30px 20px;
+}
+
+.gadget-grid, .repair-images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gadget-grid img, .repair-images img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.reviews-section .review {
+  margin-bottom: 20px;
+}
+
+.review img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.contact-section form {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+form .btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #004e92;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #004e92;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.contact-link:hover {
+  background-color: #e0e0e0;
+}
+
+.contact-link svg {
+  flex-shrink: 0;
+}
